@@ -1,6 +1,6 @@
 {
   "name" : "Arunkumar",
-, "email" : "Arunkumarms@outlook.com",  
+ "email" : "Arunkumarms@outlook.com",  
   "version": "0.9.0",
   "description": "isomorphic experimental app",
   "main": "app.js",
