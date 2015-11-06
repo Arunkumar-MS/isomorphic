@@ -6,7 +6,7 @@ export  function getWeatherReport(req, res) {
     'Accept': 'application/json'
   };
   request.get({
-      url: 'http://api.openweathermap.org/data/2.5/weather?q='+req.query.city+'&appid=bd82977b86bf27fb59a04b61b657fb6f&units=metric',
+      url: 'http://api.openweathermap.org/data/2.5/weather?q='+req.query.city+'&appid=92f5626d3f36274017c4dadfc6e71ebb&units=metric',
       headers: Header
     },
     function (error, response, body) {
