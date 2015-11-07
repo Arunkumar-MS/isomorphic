@@ -7,7 +7,7 @@ class home extends React.Component{
 
 <div> <form action="/report">
   Enter City Name:
-  <input type="text" name="city" required>
+  <input type="text" name="city" placeholder="city name" required>
   </input> 
   <input className="submit" type="submit" value="Submit">
   </input>

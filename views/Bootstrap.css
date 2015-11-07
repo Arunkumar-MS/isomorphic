@@ -42,6 +42,15 @@ table {
 	border-spacing: 0;
 }
 
+/* latin */
+@font-face {
+  font-family: 'Cookie';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cookie-Regular'), url(http://fonts.gstatic.com/s/cookie/v7/crMuSvy3krjox1JAKfe7Ew.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 
 
 
@@ -66,7 +75,7 @@ table {
     width: 510px;
     margin-left: 29%;
     color: #4A2CC1;
-    font-size: 27px;
+    font-size: 10px;
     padding: 2%;
     background: #F3F7F6;
     border-radius: 22px;
@@ -75,6 +84,9 @@ table {
     text-align: center;
     border-right-style: inherit;
     border-left-style: inherit;
+  	font: 400 30px/0.8 'Cookie', Helvetica, sans-serif;
+  	color: #2b2b2b;
+  	text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
 
 }
 
@@ -132,8 +144,38 @@ body {
     color: #E4E4E4;
 }
 
+.report-main a {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #9ca60f);
+  background-image: -moz-linear-gradient(top, #000000, #9ca60f);
+  background-image: -ms-linear-gradient(top, #000000, #9ca60f);
+  background-image: -o-linear-gradient(top, #000000, #9ca60f);
+  background-image: linear-gradient(to bottom, #000000, #9ca60f);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 1px 3px #cc33cc;
+  -moz-box-shadow: 0px 1px 3px #cc33cc;
+  box-shadow: 0px 1px 3px #cc33cc;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
 
-.report-main a:hover , .submit:hover {
+.report-main a:hover {
+   background: #de000b;
+  background-image: -webkit-linear-gradient(top, #de000b, #ff0303);
+  background-image: -moz-linear-gradient(top, #de000b, #ff0303);
+  background-image: -ms-linear-gradient(top, #de000b, #ff0303);
+  background-image: -o-linear-gradient(top, #de000b, #ff0303);
+  background-image: linear-gradient(to bottom, #de000b, #ff0303);
+  text-decoration: none;
+}
+
+
+.submit:hover {
   background: #000000;
   background-image: -webkit-linear-gradient(top, #000000, #e4ebf0);
   background-image: -moz-linear-gradient(top, #000000, #e4ebf0);
@@ -145,9 +187,10 @@ body {
 
 input[type="text"] {
 	border-radius: 5px;
-  padding: 10px;
+  padding: 2px 2px 2px 6px;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
+  font: 400 30px 'Cookie', Helvetica, sans-serif;
 }
  input[type="text"]:focus,
  input[type="text"].focus {
