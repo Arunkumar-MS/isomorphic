@@ -5,6 +5,7 @@ export default class MoreInfo extends React.Component
     
  return (
 				<div className="tg-wrap"><table className="tg">
+				  <tbody>
 				  <tr>
 				    <th className="tg-dx8v">Min</th>
 				    <th className="tg-yw4l">Max</th>
@@ -13,6 +14,7 @@ export default class MoreInfo extends React.Component
 				    <th className="tg-yw4l">country</th>
 				    <th className="tg-yw4l">description</th>
 				  </tr>
+				  
 				  <tr>
 				    <td className="tg-yw4l">{this.props.main.temp_min}</td>
 				    <td className="tg-yw4l">{this.props.main.temp_max}</td>
@@ -21,6 +23,7 @@ export default class MoreInfo extends React.Component
 				    <td className="tg-yw4l">{this.props.country}</td>
 				    <td className="tg-yw4l">{this.props.description}</td>
 				  </tr>
+				  </tbody>
 				</table></div>
 				);
 			}
