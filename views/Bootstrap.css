@@ -123,6 +123,14 @@ body {
   text-decoration: none;
 }
 
+.info
+{
+
+	position: absolute;
+    top: 83%;
+    margin-left: 5%;
+    color: #E4E4E4;
+}
 
 
 .report-main a:hover , .submit:hover {
@@ -146,3 +154,10 @@ input[type="text"] {
   border: solid 1px #707070;
   box-shadow: 0 0 5px 1px #969696;
 }
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-dx8v{font-size:12px;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
