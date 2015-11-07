@@ -8,6 +8,7 @@ const app = express();
 const layoutPath = path.join(__dirname, 'views/layout.jade');
 const layout = fs.readFileSync(layoutPath, 'utf8');
 const layoutFn = jade.compile(layout, {filename: layoutPath});
+app.use(express.static(__dirname + '/assets'));
 app.set('views', path.join(__dirname, 'components'));
 app.engine('js', reactViewEngine(layoutFn));
 app.get('/',(req, res) =>{

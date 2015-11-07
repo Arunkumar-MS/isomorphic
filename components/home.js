@@ -9,7 +9,7 @@ class home extends React.Component{
   Enter City Name:
   <input type="text" name="city" required>
   </input> 
-  <input type="submit" value="Submit">
+  <input className="submit" type="submit" value="Submit">
   </input>
 </form>
  </div>
