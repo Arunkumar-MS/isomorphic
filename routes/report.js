@@ -10,18 +10,18 @@ export  function getWeatherReport(req, res) {
       headers: Header
     },
     function (error, response, body) {
-      body=JSON.parse(body) 
-      if(body.cod == '404')
+     
+      if(response.statusCode  != 200 || JSON.parse(body).cod == '404'  )
       {
-        res.send('City Not found');
+        res.send('Opps somthing went wrong or city not found!!');
       }
       else
       {
- return res.render('Report.js', {
+        return res.render('Report.js', {
       pageTitle: req.query.city+' Weather',
       props: 
       {
-      body: body,
+      body: JSON.parse(body),
       city:req.query.city,
       response: response 
   	  }
