@@ -25,6 +25,6 @@ app.get('/',(req, res) =>{
 });
 app.get('/report', getWeatherReport);
 
-const server = app.listen(app.get('port'), () => {
+const server = app.listen(app.get('port'),app.get('ip'), () => {
    console.log(JSON.stringify(server.address())); 
 });
