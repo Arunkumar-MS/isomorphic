@@ -2,7 +2,7 @@
 ### Steps to start the server
 
    - npm install
-   - node app.js
+   - node . or node app.js
    - goto : http://localhost:5000/
    - This app need working internet connection to connect open API hosted in api.openweathermap
 
