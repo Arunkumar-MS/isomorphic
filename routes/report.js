@@ -10,16 +10,23 @@ export  function getWeatherReport(req, res) {
       headers: Header
     },
     function (error, response, body) {
-      
+      body=JSON.parse(body) 
+      if(body.cod == '404')
+      {
+        res.send('City Not found');
+      }
+      else
+      {
  return res.render('Report.js', {
       pageTitle: req.query.city+' Weather',
       props: 
       {
-      body: JSON.parse(body),
+      body: body,
       city:req.query.city,
       response: response 
   	  }
 	    });   
+}
 	});
 }
 
